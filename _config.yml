@@ -15,13 +15,13 @@
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "zh-TW"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Site Title"
+title                    : "Cary Hsieh｜多面向資管職人"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
+subtitle                 : "跨界合作（AI × 管理 × IT）· 長期知識型內容經營"
+name                     : "Cary Hsieh"
+description              : "聚焦企業內部 AI 協作、資料治理與營運驗證的資管職人。"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -113,10 +113,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Cary Hsieh"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "跨界合作（AI × 管理 × IT），專注內部 AI 工具、資料治理與營運驗證。"
+  location         :
   email            :
   links:
     - label: "Email"
