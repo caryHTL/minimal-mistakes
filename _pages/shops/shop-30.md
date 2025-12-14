@@ -1,0 +1,18 @@
+---
+layout: "single"
+title: "立易水電材料行"
+permalink: "/shops/shop-30/"
+shop: "shop-30"
+map_url: "https://www.google.com/maps/place/%E7%AB%8B%E6%98%93%E6%B0%B4%E9%9B%BB%E6%9D%90%E6%96%99%E8%A1%8C/data=!4m7!3m6!1s0x346820af953a07b5:0x13b50e7a03ff8967!8m2!3d25.0637125!4d121.182155!16s%2Fg%2F11dxd07y4z!19sChIJtQc6la8gaDQRZ4n_A3oOtRM?authuser=0&hl=zh-TW&rclk=1"
+rating: 4.2
+review_count: 26
+category: "五金用品店"
+address: "大觀路599號"
+status: "已打烊"
+hours_note: "⋅ 開始營業時間：週一08:00"
+phone: "03 386 4239"
+image_url: "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSw81XHG-NoDlGPrNo3aArpg5z11KtNEIyTkUaKNnta8mNujfISihWJQLX05XxiHtAII3Sur5GdjPPij4fJoflBV14iLEXmu-VlkVXezCf_KW_rWAEoBEpfPtAMNEqRQrSWa1BB1=w80-h106-k-no"
+review_snippet: "·"
+---
+
+{% include shop-details.md shop=page %}

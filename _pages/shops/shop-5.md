@@ -1,0 +1,18 @@
+---
+layout: "single"
+title: "鉦欣水電材料有限公司"
+permalink: "/shops/shop-5/"
+shop: "shop-5"
+map_url: "https://www.google.com/maps/place/%E9%89%A6%E6%AC%A3%E6%B0%B4%E9%9B%BB%E6%9D%90%E6%96%99%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/data=!4m7!3m6!1s0x3442a07434c37c37:0x14c7eff1629ed49e!8m2!3d25.0608304!4d121.2699987!16s%2Fg%2F1ttp_td4!19sChIJN3zDNHSgQjQRntSeYvHvxxQ?authuser=0&hl=zh-TW&rclk=1"
+rating: 4.5
+review_count: 89
+category: "商店"
+address: "南崁路二段347號"
+status: "已打烊"
+hours_note: "⋅ 開始營業時間：週一08:00"
+phone: "03 352 6201"
+image_url: "https://lh3.googleusercontent.com/p/AF1QipPSvI8zCuJAij2bEfptYQQZEA2DVk2OMcj3XpUv=w122-h92-k-no"
+review_snippet: "·"
+---
+
+{% include shop-details.md shop=page %}
