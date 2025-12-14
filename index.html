@@ -2,3 +2,99 @@
 layout: home
 author_profile: true
 ---
+
+<div class="page__hero" style="padding: 2.5rem 0 1.5rem 0;">
+  <p class="page__lead">內部 AI 協作、資料治理與營運驗證的專業服務</p>
+  <h1>Cary Hsieh｜讓 AI 成為企業內部的生產力夥伴</h1>
+  <p class="lead">結合管理、IT 與 AI，設計可落地的框架、導入工具並建立治理機制，協助組織穩定釋放 AI 產能。</p>
+  <p>
+    <a class="btn btn--primary" href="#services">了解服務方案</a>
+    <a class="btn btn--inverse" href="#contact">預約策略診斷</a>
+  </p>
+</div>
+
+<section id="value" class="page__content">
+  <h2>Cary Hsieh 能帶來的價值</h2>
+  <div class="feature__wrapper">
+    <div class="feature__item">
+      <h3>跨域視角</h3>
+      <p>融合管理、IT 與 AI 的實戰經驗，讓技術決策貼合營運場景。</p>
+    </div>
+    <div class="feature__item">
+      <h3>治理優先</h3>
+      <p>從資料治理、流程控管到權限設計，確保導入 AI 同時兼顧安全與合規。</p>
+    </div>
+    <div class="feature__item">
+      <h3>可驗證成果</h3>
+      <p>以營運驗證為核心，透過迭代實驗衡量 AI 方案的真實效益。</p>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="page__content">
+  <h2>服務方案：將 AI 變成可靠的內部協作夥伴</h2>
+  <div class="feature__wrapper">
+    <div class="feature__item">
+      <h3>AI 導入路徑診斷</h3>
+      <p>盤點現有流程與數據資產，找出最能提升產能的 AI 切入點，並制定 90 天落地行動計畫。</p>
+    </div>
+    <div class="feature__item">
+      <h3>資料治理與安全設計</h3>
+      <p>建立資料存取、權限、版本控管與品質指標，確保 AI 工具導入的每一步都能被監管與追蹤。</p>
+    </div>
+    <div class="feature__item">
+      <h3>內部 AI 工具教練</h3>
+      <p>設計企業內部可用的提示語庫、知識庫與 SOP，並透過工作坊與陪跑制度讓團隊快速上手。</p>
+    </div>
+    <div class="feature__item">
+      <h3>營運驗證與績效度量</h3>
+      <p>建立量化指標與實驗設計，驗證 AI 方案在成本、效率與品質上的成效，支撐持續投資決策。</p>
+    </div>
+  </div>
+</section>
+
+<section id="process" class="page__content">
+  <h2>合作流程</h2>
+  <ol>
+    <li><strong>需求對齊：</strong>釐清現況、目標與限制，界定評估指標。</li>
+    <li><strong>藍圖設計：</strong>設計 AI 與資料治理架構，制定工具與權限策略。</li>
+    <li><strong>實驗與導入：</strong>以小步快跑方式驗證，快速調整提示語、流程與模型設定。</li>
+    <li><strong>知識化與擴散：</strong>建立知識庫與訓練教材，讓經驗可複製、可量產。</li>
+  </ol>
+</section>
+
+<section id="fit" class="page__content">
+  <h2>適合的合作場景</h2>
+  <ul>
+    <li>需要在既有 IT 架構下導入 AI，兼顧安全與合規的企業。</li>
+    <li>想快速驗證 AI 對營運的實質貢獻，並建立清晰度量框架的團隊。</li>
+    <li>希望打造內部 AI 協作文化與知識庫，讓跨部門能共享最佳實務的組織。</li>
+  </ul>
+</section>
+
+<section id="contact" class="page__content">
+  <h2>預約一場 30 分鐘策略診斷</h2>
+  <p class="lead">分享你的團隊規模、現況與目標，我將提供客製化的 AI 導入建議與下一步行動清單。</p>
+  {% if site.author.email %}
+  <p><a class="btn btn--primary" href="mailto:{{ site.author.email }}">Email 預約</a></p>
+  {% else %}
+  <div class="notice--info">
+    <p>請在 <code>_config.yml</code> 的 <code>author.email</code> 填寫聯絡信箱，就能在這裡顯示「Email 預約」按鈕。</p>
+  </div>
+  {% endif %}
+</section>
+
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+
+{% if paginator %}
+  {% assign posts = paginator.posts %}
+{% else %}
+  {% assign posts = site.posts %}
+{% endif %}
+
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+<div class="entries-{{ entries_layout }}">
+  {% include documents-collection.html entries=posts type=entries_layout %}
+</div>
+
+{% include paginator.html %}
