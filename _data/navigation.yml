@@ -1,5 +1,7 @@
 # main links
 main:
+  - title: "在地水電行"
+    url: /stores/
   - title: "書籍相簿"
     url: /books-album/
   - title: "Quick-Start Guide"

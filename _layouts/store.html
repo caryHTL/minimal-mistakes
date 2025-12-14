@@ -1,0 +1,64 @@
+---
+layout: single
+---
+<article class="store">
+  <div class="store__header">
+    {% if page.image_url %}
+      <div class="store__image">
+        <img src="{{ page.image_url }}" alt="{{ page.title }} 相片">
+      </div>
+    {% endif %}
+    <div class="store__meta">
+      {% if page.category %}
+        <p class="store__category">{{ page.category }}</p>
+      {% endif %}
+      <h1 class="store__title">{{ page.title }}</h1>
+      <div class="store__rating">
+        {% if page.rating %}
+          <span class="store__rating-score">⭐ {{ page.rating | round: 1 }}</span>
+        {% endif %}
+        {% if page.reviews_count %}
+          <span class="store__rating-count">（{{ page.reviews_count }} 則評論）</span>
+        {% endif %}
+      </div>
+      {% if page.status or page.hours_note %}
+        <p class="store__status">
+          {{ page.status }}
+          {% if page.hours_note %}
+            <span class="store__separator">·</span>{{ page.hours_note }}
+          {% endif %}
+        </p>
+      {% endif %}
+      <ul class="store__details">
+        {% if page.address %}<li><strong>地址：</strong>{{ page.address }}</li>{% endif %}
+        {% if page.phone %}<li><strong>電話：</strong>{{ page.phone }}</li>{% endif %}
+        {% if page.badge %}<li class="store__badge">{{ page.badge }}</li>{% endif %}
+      </ul>
+      <div class="store__actions">
+        {% if page.map_url %}
+          <a class="btn btn--primary" href="{{ page.map_url }}" target="_blank" rel="noopener">在 Google 地圖開啟</a>
+        {% endif %}
+      </div>
+    </div>
+    {% if page.avatar_url %}
+      <div class="store__avatar">
+        <img src="{{ page.avatar_url }}" alt="{{ page.title }} 標誌">
+      </div>
+    {% endif %}
+  </div>
+
+  <div class="store__content">
+    {{ content }}
+  </div>
+
+  {% if page.review_snippet or page.review_notice %}
+    <div class="store__reviews">
+      <h2>鄰里評價</h2>
+      {% if page.review_snippet %}
+        <blockquote>{{ page.review_snippet }}</blockquote>
+      {% else %}
+        <p>{{ page.review_notice }}</p>
+      {% endif %}
+    </div>
+  {% endif %}
+</article>
