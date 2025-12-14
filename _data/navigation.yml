@@ -2,6 +2,8 @@
 main:
   - title: "書籍相簿"
     url: /books-album/
+  - title: "在地水電行"
+    url: /shops/
   - title: "Quick-Start Guide"
     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "書籍相簿"
